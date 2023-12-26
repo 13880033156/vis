@@ -821,7 +821,7 @@ function changeChart2() {
   var myChart = echarts.init(document.getElementById('mchart'));
 
   // 使用 jQuery 的 get 方法加载 SVG 地图
-  $.get('../images/palestine.svg', function (svg) {
+  $.get('./images/palestine.svg', function (svg) {
       // 注册 SVG 地图
       echarts.registerMap('palestine_svg', { svg: svg });
 
